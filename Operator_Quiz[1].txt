@@ -1,0 +1,779 @@
+Question: 1
+What is the value of a after executing the following code?
+
+int a = 5;
+a += 3 * 2;
+
+
+A.11
+
+
+B.16
+
+
+C.30
+
+
+D.15
+
+
+E.14
+
+---------------------------------------------
+Question: 2
+What will be the output of the below program?
+
+int main() {
+int a = 5;
+int b = 10;
+int c = 15;
+int result = a++ * ++b - - -c;
+printf(“result = %d\n”, result);
+return 0;
+}
+
+
+
+A .result = 36
+
+
+B. result = 41
+
+
+C. result = 35
+
+
+D. result = 90
+
+
+E .result = 91
+---------------------------------------------
+Question: 3
+What will be the output of the following code snippet?
+
+include
+int main() {
+int x = 3;
+int y = 2;
+int z = x++ * (x + y) - y--;
+printf(“z = %d\n”, z);
+return 0;
+}
+
+
+
+A.z = 22
+
+
+B.z = 23
+
+C.z = 16
+
+
+D.z = 7
+
+
+E.z = 20
+
+---------------------------------------------
+
+Question: 4
+What will be the output of the following code snippet?
+
+include
+int main() {
+int x = 10;
+int y = 5;
+int z = x - --y;
+printf(“x = %d, y = %d, z = %d\n”, x, y, z);
+return 0;
+}
+
+
+A.x = 9, y = 5, z = 5
+
+
+B.x = 9, y = 4, z = 5
+
+
+C.x = 9, y = 5, z = 4
+
+
+D.Compiler Error
+
+
+E.None
+
+---------------------------------------------
+
+Question: 5
+What will be the output of the following code snippet?
+
+include
+int main() {
+int x = 3;
+int y = 2;
+int z = x++ * (x + y) - --y;
+printf(“z = %d\n”, z);
+return 0;
+}
+
+
+
+A.z = 22
+
+
+B.z = 23
+
+
+C.z = 16
+
+
+D.z = 17
+
+
+E.z = 20
+
+---------------------------------------------
+
+Question: 6
+What will be the output of the following code snippet?
+
+include
+int main() {
+int x = 15;
+int y = 2;
+int z = x / y + x % y;
+printf(“z = %d\n”, z);
+return 0;
+}
+
+
+
+A.z = 7
+
+
+B.z = 8
+
+
+C.z = 9
+
+
+D.z = 14
+
+
+E.z = 15
+
+ ---------------------------------------------
+
+Question: 7
+What will be the output of the following code snippet?
+
+include
+int main() {
+int a = 10;
+int b = 20;
+int result = (a > b) && (b < a++) || (a++ < b);
+printf(“result = %d\n”, result);
+return 0;
+}
+
+
+
+A.result = 0
+
+
+B.result = 1
+
+
+C.result = 2
+
+
+D.result = 3
+
+
+E.result = 4
+
+---------------------------------------------
+
+Question: 8
+What will be the output of the following code snippet?
+
+include
+int main() {
+
+int a = 1, b = 2, c = 3;
+int result = a++ + ++b + c-- - --c + ++a + b-- + a- --b;
+printf(“result = %d\n”, result);return 0;
+}
+
+
+
+A.result = 8
+
+
+B.result = 11
+
+
+C.result = 12
+
+
+D.result = 13
+
+
+E.result = 14
+
+---------------------------------------------
+
+Question: 9
+What will be the output of the following code snippet?
+
+include
+int main() {
+int a = 10;
+int b = 15;
+int c = a++ + b--;
+printf(“a = %d, b = %d, c = %d\n”, a, b, c);
+return 0;
+}
+
+
+A.a = 11, b = 14, c = 25
+
+
+B.a = 12, b = 13, c = 25
+
+
+C.a = 11, b = 13, c = 25
+
+
+D.a = 12, b = 14, c = 23
+
+
+E.a = 12, b = 14, c = 24
+
+---------------------------------------------
+
+Question: 10
+What will be the output of the following code snippet?
+
+include
+int main() {
+int a = 10, b = 20, c = 10;
+int result = (a > b) || (b == c) && (c != a);
+printf(“result = %d\n”, result);
+return 0;
+}
+
+
+A.result = 0
+
+
+B.result = 1
+
+
+C.result = 2
+
+
+D.result = 3
+
+
+E.result = 4
+
+---------------------------------------------
+
+Question: 11
+What will be the output of the following code snippet?
+
+include
+int main() {
+int a = 5, b = 10, c = 15;
+int result = !(a <= b) && !(b != c) && !(c >= a);
+printf(“result = %d\n”, result);
+return 0;
+}
+
+
+A.result = 0
+
+
+B.result = 1
+
+
+C.result = 2
+
+
+D.result = 3
+
+
+E.result = 4
+
+---------------------------------------------
+
+Question: 12
+What will be the output of the following code snippet?
+
+include
+int main() {
+int a = 15, b = 4, c = 3;
+int result = (a + b) % c * b;
+printf(“result = %d\n”, result);
+return 0;
+}
+
+
+
+A.result = 8
+
+
+B.result = 7
+
+
+C.result = 4
+
+
+D.result = 5
+
+
+E.result = 6
+
+---------------------------------------------
+
+Question: 13
+What will be the output of the following C code?
+
+include
+int main() {
+int a = 3;
+int b = 4;
+int result = (a += b) * (b -= 2);
+printf(“result = %d\n”, result);
+return 0;
+}
+
+
+
+A.result = 10
+
+
+B.result = 12
+
+
+C.result = 15
+
+
+D.result = 14
+
+
+E.result = 16
+
+---------------------------------------------
+
+Question: 14
+What will be the data type of the variable result if the following line of code is used?
+
+float result = 3 / 2;
+
+
+
+A.1.0
+
+
+B.1
+
+
+C.1.5
+
+
+D.compilation error
+
+
+E.2
+
+---------------------------------------------
+
+Question: 15
+Which printf statement will correctly print the value of the variable count as a character?
+
+
+Correct Answer
+A.printf(“Count: %c”, count);
+
+
+B.printf(“Count: %d”, count);
+
+
+C.printf(“Count: %f”, count);
+
+
+D.printf(“Count: %s”, count);
+
+
+E.None
+
+
+------------------------------------------
+
+Question: 16
+include
+int main() {
+int a = 5;
+int b = 10;
+int c = 15;
+int d = 2;
+int result = a++ * ++b - c-- / d++;
+printf("%d %d %d %d",a,b,c,result);
+return 0;
+}
+
+
+A. 6 11 14 48
+
+
+B. 6 11 14 49
+
+
+C. 6 11 15 49
+
+
+D. 6 10 14 48
+
+
+E. None
+
+---------------------------------
+
+Question: 17
+include
+int main() {
+int x = 3;
+int y = 2;
+int z = x++ * x * --y - y--;
+printf(“%d %d %d”,x,y,z);
+return 0;
+}
+
+
+
+A. 4 0 11
+
+
+B. 4 4 11
+
+
+C. 4 4 15
+
+
+D. 4 4 4
+
+
+E. None
+
+---------------------------------
+Question: 18
+Which of the following operator takes only integer operands ?
+
+
+
+A.+
+
+
+B.*
+
+
+C./
+
+D.%
+
+
+E.None of these
+
+---------------------------------
+
+Question: 19
+what is the Output :
+
+void main()
+{
+
+int i =10;
+i=!i>14;
+printf(“i=%d”,i);
+}
+
+
+
+A.10
+
+
+B.14
+
+
+C.0
+
+
+D.1
+
+
+E.None of these
+
+---------------------------------
+Question: 20
+include
+int main()
+{
+int x[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+printf(“%d”,sizeof(x));
+return 0;
+}
+
+
+
+A. 2
+
+
+B. 4
+
+
+C. 20
+
+
+D. 40
+---------------------------------
+
+Question: 21
+What will be the output of the C program?
+
+int main()
+{
+printf(“%d”,3 * 2--);
+}
+
+
+
+A. 3
+
+
+B. 9
+
+
+C. 6
+
+
+D. Compilation error
+
+---------------------------------
+
+Question: 22
+include
+int main()
+{
+int i = 10;
+i++;
+i * i;
+printf(“%d\n”,i);
+return 0;
+}
+
+
+
+A. 121
+
+
+B. 100
+
+
+C. 10
+
+
+D. 11
+
+---------------------------------
+
+Question: 23
+int main()
+{
+int a;
+a = (1, 2, 3);
+printf(“%d”, b);
+return 0;
+}
+
+
+
+A. 7
+
+
+B. 9
+
+
+C. 3
+
+
+D. Compilation error
+
+---------------------------------
+Question: 24
+include
+int main()
+{
+int a=4,b,c;
+b = -–a;
+c = a–-;
+printf(“%d %d %d”,a,b,c);
+return 0;
+}
+
+
+
+a) 3 3 2
+
+
+b) 2 3 2
+
+
+c) 3 2 2
+
+
+d) 2 3 3
+
+---------------------------------
+
+Question: 25
+include
+int main()
+{
+int x, y, z;
+x = 9 > 8 > 7;
+y = 9 > 8 > 0;
+z = 9 > 8 > 1;
+printf(“%d %d %d”, x, y, z);
+return 0;
+}
+
+
+
+a) 0 0 1
+
+
+b) 0 1 0
+
+
+c) 1 0 0
+
+
+d) 0 1 1
+
+---------------------------------
+
+Question: 26
+include
+int main()
+{
+int a=-1, b=1, c, d;
+c = !a && b;
+d = !a || b;
+printf(“%d %d %d %d”,a,b,c,d);
+return 0;
+}
+
+
+
+a) -1 1 1 0
+
+
+b) -1 1 0 0
+
+
+c) -1 1 1 1
+
+
+d) -1 1 0 1
+
+
+Question: 27
+Find the output of the given C program.
+
+include
+int main()
+{
+printf(“%d Hello %d”);
+return 0;
+}
+
+
+
+a) None of these
+
+
+b) Garbage_value Hello Garbage_value
+
+
+c) 1 Hello 1
+
+
+d) 0 Hello 0
+
+
+e) Compilation error
+
+---------------------------------
+Question: 28
+include
+int main()
+{
+printf(“%d”, 1.9);
+return 0;
+}
+
+
+
+a) garbage value
+
+
+b) 1.9
+
+
+c) 1
+
+
+d) incompaitable type
+
+---------------------------------
+Find the output of the given C program.
+29) #include <stdio.h>
+
+int main()
+{
+    int i = 1, 2, 3;
+    
+    printf("%d", i);
+    
+    return 0;
+}
+
+
+a)1
+b)3
+c)Garbage value
+d)Compile time error 
+
+
+-----------------------------
+Find the output of the given C program.
+
+30) #include <stdio.h>
+
+int main()
+{
+    int i = (1, 2, 3);
+    
+    printf("%d", i);
+    
+    return 0;
+}
+
+a)1
+b)3
+c)Garbage value
+d)Compile time error

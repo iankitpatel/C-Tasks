@@ -1,0 +1,95 @@
+1-Write a C program to print all alphabets from a to z.(using while loop).
+
+int main() {
+    char ch='a';
+   
+    while(ch>='a' && ch<='z'){
+        printf(" %c",ch);
+        ch++;
+    }
+
+2-Write a C program to print all natural numbers in reverse .(using while loop).
+
+
+int n;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+
+    while(n>0){
+        printf(" %d",n);
+        n--;
+    }
+
+
+
+ int n1,n2;
+    printf("Enter the number: ");
+    scanf("%d",&n1);
+     printf("Enter the number: ");
+    scanf("%d",&n2);
+   
+    while(n1<=n2){
+        printf(" %d",n1);
+        n1++;
+    }
+3-Write a C program to print all even numbers between 1 to 100.(using while loop).
+
+int n1,i;
+    printf("Enter the number: ");
+    scanf("%d",&n1);
+    
+
+    while(n1>=0 && n1<=100){
+        if(n1%2==0){
+        printf(" %d",n1);
+        }
+        n1++;
+    }
+
+ int n,i=1;
+    printf("Enter the number: ");
+    scanf("%d",&n);
+
+    while(i<=n){
+        if(i%2==0){
+        printf(" %d",i);
+        }
+        i++;
+    }
+
+4-Write a C program to count number of digits in a number.(using while loop).
+
+int n,c=0,f;
+    printf("enter a number: ");
+    scanf("%d",&n);
+    do {
+        f=n%10;
+        n=n/10;
+        c++;
+    }
+    while(n);
+        printf("%d",c);
+
+int n,c=0,f;
+    printf("enter a number: ");
+    scanf("%d",&n);
+    
+    while(n){
+        f=n%10;
+        n=n/10;
+        c++;
+    }
+        printf("%d",c);
+
+
+5-Write a C program that calculates the product of numbers from 1 to 5 using a while loop.(using while loop).
+
+int n,i=1,r=1;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    
+    while(i<=n){
+        r=r*i;
+        i++;
+    }
+    printf("%d",r);

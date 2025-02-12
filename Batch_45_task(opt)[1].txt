@@ -1,0 +1,234 @@
+Que 1 : Write a 'C' program to take the marks of a student in 5 subjects as input and determine how many subjects have marks greater than or equal to 35 and how many have marks less than 35. 
+------- The program should not use any control statements (if, else, switch, etc.) or the ternary operator. 
+
+Sample input  : int sub1 = 38, sub2 = 34, sub3 = 35, sub4 = 78, sub5 = 20
+
+Sample Output : Pass in 3 subject and fail in 2 subject.  
+
+    int pc=0;
+    int sub1,sub2,sub3,sub4,sub5;
+    printf("enter first subject number : ");
+    scanf("%d", &sub1);
+    printf("enter second subject number : ");
+    scanf("%d", &sub2);
+    printf("enter third subject number : ");
+    scanf("%d", &sub3);
+    printf("enter fourth subject number : ");
+    scanf("%d", &sub4);
+    printf("enter fifth subject number : ");
+    scanf("%d", &sub5);
+    printf("first subject number is %d\n Second subject number is %d\n Third subject number is %d\n fouth subject number is %d\n Fifth subject number is %d\n", sub1,sub2,sub3,sub4,sub5);
+    pc+=sub1>=35;
+    pc+=sub2>=35;
+    pc+=sub3>=35;
+    pc+=sub4>=35;
+    pc+=sub5>=35;
+    
+    printf("pass in %d and fail in %d",pc,5-pc);
+       
+========================================================================================================       
+
+Que 2 : Write a 'C' program to take the number of days and convert into (days:months:years)
+-------
+
+Sample input  : int days = 500
+
+Sample Output :  1 year 4 month and 15 days. 
+
+  int tdays,y,m,w,d;
+    printf("enter to number of days : ");
+    scanf("%d",&tdays);
+    y=tdays/365;
+    m=tdays%365/30;
+    w=tdays%365%30/7;
+    d=tdays%365%30%7;
+    printf("year = %d\n month = %d\n weeks = %d\n days = %d", y,m,w,d);
+       
+========================================================================================================       
+
+Que 3 : Write a 'C' program to take the number of seconds and convert into (H:M:S)
+-------
+
+Sample input  : int seconds = 3665
+
+Sample Output : 1 hour 1 minute and 5 second
+
+int tsec,h,m,s;
+    printf("enter to number of seconds : ");
+    scanf("%d",&tsec);
+    h=tsec/3600;
+    m=tsec%3600/60;
+    s=tsec%3600%60%60;
+    printf("Hour = %d\n Minute = %d\n Seconds = %d\n", h,m,s);
+    
+----------------------------------------------------------------------------------
+
+
+
+
+1)Find the output of the given C program?
+#include<stdio.h>
+int main()
+{
+  int a;
+  a = 'a' > 'A';
+  printf("%d",a);
+  return 0;
+}
+
+ans : 1
+=======================================================================
+2)Find the output of the given C program?
+
+int main() {
+int a = 3;
+int b = 4;
+int result = (a += b) * (b -= 2);
+printf("result = %d\n", result);
+return 0;
+}
+
+ans : 14
+======================================================================
+3)What will be the output of this below program?
+
+#include<stdio.h>
+int main() {
+int a = 5, b = 10, c = 15;
+int result = !(a <= b) && !(b != c) && !(c >= a);
+printf("result = %d\n", result);
+return 0;
+}
+
+ans : 0
+========================================================================
+4) What will be the output of this below program?
+
+#include<stdio.h>
+int main() {
+int a = 10;
+int b = 15;
+int c = a++ + b--;
+printf("a = %d, b = %d, c = %d\n", a, b, c);
+return 0;
+}
+
+ans : 11 , 14, 25
+==========================================================================
+5)What will be the output of this below program?
+
+#include<stdio.h>
+int main()
+{
+int a;
+a = 1, 2, 3;
+printf("%d", a);
+return 0;
+}
+============================================================================
+6)What will be the output of this below program?
+
+#include <stdio.h>
+int main()
+{
+    int a = 5, b = 5, c = 10, result;
+
+    result = (a == b) && (c > b);
+    printf(" %d \n", result);
+
+    result = (a == b) && (c < b);
+    printf(" %d \n", result);
+
+    result = (a == b) || (c < b);
+    printf(" %d \n", result);
+
+    return 0;
+}
+
+ans 1, 0, 1
+===========================================================================
+7) What will be the output of following program ?
+#include <stdio.h>
+  void main()
+  {   
+	printf("%d",printf("Hello\n"));
+  }
+
+8
+===============================================================================
+8)Which of the following expressions will evaluate to true?
+
+int x = 0, y = -1, z = 5;
+
+a) (x || y) && z
+b) (x && y) || z
+c) !(x && y) && z
+d) All of the above  right
+===============================================================================
+9)What will be the output of the above program?
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 3, c, d;
+    c = a < b && a > 2;
+    d = a < b || b > 2;
+    printf("%d %d %d %d", a, b, c, d);
+    return 0;
+}
+5,3,0,1
+==================================================================================
+10)What will be the output of the following code?
+#include <stdio.h>
+
+int main() {
+    int x = 1, y = 2;
+    printf(“%d%d”, x);
+    return 0;
+}
+1 garbage value
+================================================================================
+11)What will be the output of the following code?
+
+int x = 10, y = 20;
+int result = (x > y) ? ((x > 15) ? x : y) : ((y > 15) ? y : x);
+printf("%d", result);
+
+20
+==============================================================================
+12)What will be the output of the following code?
+
+ int a = 5, b = 0, c = 10;
+ (a && b || c)?printf("True"):printf("False");
+
+true
+==============================================================================
+13)Which of the following is not a valid data type in C?
+
+a) int
+b) float
+c) string   
+d) char
+
+string
+==============================================================================
+14)Which header file is required to use the printf and scanf functions?
+
+a) stdlib.h
+b) stdio.h
+c) conio.h
+d) math.h
+
+stdio.h
+===============================================================================
+15)What will be the output of this below program?
+
+#include<stdio.h>
+int main() {
+printf("%d ", 2 + 3 * 4 + 5 == 45);
+printf("%d ", 2 + 3 * 4 + 5 == 19);
+printf("%d ", (2 + 3) * (4 + 5) == 45);
+return 0;
+}
+
+false true true
+

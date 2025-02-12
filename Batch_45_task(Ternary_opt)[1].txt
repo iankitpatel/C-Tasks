@@ -1,0 +1,87 @@
+1. Write a C program to accept two integers and check whether they are equal or not (Using ternary operator).
+Test Data : 15 15
+Expected Output :
+Number1 and Number2 are equal
+
+    int a,b;
+    printf("Enter the value of a: "); 
+    scanf("%d",&a);
+    printf("Enter the value of b: "); 
+    scanf("%d",&b);
+    a==b ? puts("both the values are equal"): puts("both values are not equal"); 
+----------------------------------------------------------------------------------------
+
+2. Write a C program to check whether a given number is even or odd (Using ternary operator).
+Test Data : 15
+Expected Output :
+15 is an odd integer
+
+nt a;
+    printf("Enter the value of a: "); 
+    scanf("%d",&a);
+    a%2==0 ? puts("given number is even number"): puts("Given number is ODD number"); 
+--------------------------------------------------------------------------------------
+
+3. Write a C program to check whether a given number is positive or negative (Using ternary operator).
+Test Data : 15
+Expected Output :
+15 is a positive number
+
+int a;
+    printf("Enter the value of a: "); 
+    scanf("%d",&a);
+    a>0? puts("given number is positive number"):(a<0)? puts("Given number is negative number"): puts("number is zero"); 
+----------------------------------------------------------------------------------------
+
+4. Write a C program to find the largest of three numbers (Using ternary operator).
+Test Data : 12 25 52
+Expected Output :
+1st Number = 12,        2nd Number = 25,        3rd Number = 52
+The 3rd Number is the greatest among three
+
+int a,b,c;
+    printf("the value of a b c ", a,b,c); 
+    scanf("%d%d%d",&a,&b,&c);
+    printf("first number is %d , second number is %d , third number is %d\n", a,b,c);
+    (a>b && a>c)?printf("the first number %d is gretest among all",a): (b>a && b>c)? printf("the second number %d is gretest among all",b):printf("the third number %d is greatest among all", c);
+    
+----------------------------------------------------------------------------------------------
+
+5. Write a C program to read the age of a candidate and determine whether he is eligible to  his/her own vote (Using ternary operator).
+Test Data : 21
+Expected Output :
+Congratulation! You are eligible for your vote.
+
+int age;
+    printf("Enter your age : ");
+    scanf("%d", &age);
+    (age>=18)? puts("Congratulation!!!!! you are eligible for vote"): (age<18)? puts("Sorry, you are not eligible for vote");
+---------------------------------------------------------------------------------------------------------------------
+6.Write a C program to check whether a character is an alphabet or not (Using ternary operator).
+Test Data :
+a
+Expected Output :
+This is a alphabet .
+
+char ch;
+    printf("enter a character : ");
+    scanf("%c", &ch);
+    (ch>='a'&&ch<='z')?puts("you have entered a small latter alphabet"):(ch>='A'&& ch<='Z')?puts ("you have entered a capital latter alphabet"): puts("you have entered a number");
+---------------------------------------------------------------------------------------
+7.The program asks the user to enter a number.
+It checks if the number is greater than 5.
+If num > 5, it prints the square of the number.
+Otherwise, it prints the cube of the number (Using ternary operator).
+
+Sample input :4
+Sample output :The square no of 4 is 16
+
+Sample input :
+Sample output :The cube no of 4 is 64
+
+
+ int n, squareroot;
+    printf("enter a number : ");
+    scanf("%d", &n);
+    squareroot= sqrt(n);
+    (n>=5)? printf("the number is greter then 5 so the square root of the number is %d", squareroot): printf("the number is smaller then 5 so the qube of the number is %d", n*n*n);

@@ -1,0 +1,111 @@
+
+                Day 3 Using While-Loop   
+             --------------------------------
+
+1)   Write a program in C to find the prime number if the number is prime print its table otherwise       print simple message like that number is not prime.
+
+      Test Case:- 1
+  
+      Input :-  5
+
+       Output:-   
+               5 is prime number
+
+                   5 * 1=5
+                   5 * 2=10
+                   ........
+                   ........
+                   ........
+                   5 * 10=50
+
+      Test Case:- 2
+
+          Input:- 6
+
+           6 is not  a prime number
+
+int n,i=1,c=0;
+   printf("Enter a number: ");
+   scanf("%d",&n);
+   
+   while(i<=n){
+      if(n%i==0){
+       c++;
+      }
+      i++;
+   }
+      i=1;
+      if(c==2){
+           while(i<=10){
+               printf("%d * %d = %d\n",n,i,n*i);
+               i++;
+               
+               
+           }
+               
+           
+       }
+       else printf("not a prime number.");
+      
+    return 0;
+
+2)  Write a program in C to add  until the last digit sum using nested while loop ?
+
+     
+      Test Case :-> 1
+  
+        Input: - 5678
+                  // 5+6+7+8=26
+                 // 26=2+6=8
+       
+       Output:- 8
+
+     
+     Test Case :-> 2
+
+       Input:- 852
+
+           // 8+5+2=15
+           // 1+5=6
+
+       Output:- 6
+
+
+
+3) Write a program to print the prime number  1 to N where N is provided by the user, using nested while     loop ?
+
+
+     Test Case: 1 
+
+      Input :-  5
+
+      Output :- 2 3 5 7 11
+
+      Test Case: 2
+
+      Input :- 7
+
+      Output:-  2 3 5 7 11 13 17
+
+4)  Write a program to print the Armstrong Number  between 100 to 500 ?
+
+
+       Test Case :- 1
+   
+      Input :  100 - 500
+
+       Output: -   153 370 371  407
+
+   
+       Test Case : 2
+       Input : 100 - 400
+
+      Output:- 153 370 371
+
+
+
+5)  Write a program to find the palindrome number between 100 to 200 ? 
+
+     Input :-  100 - 200
+
+    Output:-  101 111 121 131 141 151 161 171 181 191

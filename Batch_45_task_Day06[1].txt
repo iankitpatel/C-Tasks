@@ -1,0 +1,386 @@
+1. Movie Ticket Booking System 🎬
+Write a C program for a movie ticket booking system. The user menu should be:
+
+Standard Ticket - ₹150
+Premium Ticket - ₹250
+VIP Ticket - ₹500
+Exit
+If the user selects 1, ask: "How many Standard Tickets do you want?"
+If the user selects 2, ask: "How many Premium Tickets do you want?"
+If the user selects 3, ask: "How many VIP Tickets do you want?"
+If the user selects 4, print: "Thank you for using Movie Ticket Booking System!" and exit.
+💰 Payment Handling:
+
+Calculate the total bill based on the user’s choice and quantity.
+Ask the user to enter the amount to pay.
+If the user enters more than the bill, return the change.
+If the user enters less than the bill, ask for the remaining amount.
+If the user wants to book more tickets (Y/N), show the menu again.
+If the user enters N/n, print: "Thank you for using Movie Ticket Booking System!"
+
+#include <stdio.h>
+
+int main() {
+    int tk,opt,tt,pt,amt=0,remn=0;
+    int bill;
+    char ch;
+    
+    a:
+    printf("1. Standard Ticket - ₹150\n");
+    printf("2. Premium Ticket - ₹250\n");
+    printf("3. VIP Ticket - ₹500\n");
+    printf("4. Exit\n");
+    
+    printf("Enter your cholice: ");
+    scanf("%d",&opt);
+    
+    if(opt==1){
+        printf("how many tickets you want? ");
+        scanf("%d",&tt);
+        pt= tt*150;
+        printf("bill= %d\n",pt); 
+        
+    }
+     else if(opt==2){
+        printf("how many premium tickets you want?");
+        scanf("%d",&tt);
+        pt= tt*250;
+        printf("bill= %d\n",pt); 
+    }
+    else if(opt==3){
+         // total tickets
+        printf("how many VIP tickets you want? ");
+        scanf("%d",&tt);
+        pt= tt*500;
+        printf("bill= %d\n",pt); 
+    }
+    else if(opt==4){
+         // total tickets
+        printf("Thank you for using Movie Ticket Booking System!");
+        return 0;
+    }
+    else {("please enter the valid number..");
+    }
+    printf("Enter the amount: ");
+    scanf("%d",&amt);
+    
+    if (amt==pt){
+        printf("Your Bill is Cleared..\n");
+    }
+    else if (amt>pt){
+       
+       int rem =amt-pt;
+     
+        printf("Your Bill is %d here is your change rs. %d /-\n",pt,rem);
+    }
+    else if (amt<bill){
+        remn= pt-amt;
+        printf("Your Bill is %d please pay the remaining amount [rs. %d /- \n]",pt,remn);
+    }
+    
+    printf("Do you want to book more tickets? ");
+    scanf(" %c",&ch);
+    
+    if(ch=='y' || ch=='Y'){
+        printf("Okay here you go..\n");
+        goto a;
+    }
+    else if(ch=='n' || ch=='N'){
+        printf("Thank you for using Movie Ticket Booking System!");
+    }
+    else printf("please enter the valid input\n ");
+
+    return 0;
+}
+----------------------------------------------------------------------------------------
+2. Restaurant Order System 🍔
+Write a C program for a restaurant ordering system with the following menu:
+
+Burger - ₹80
+Pizza - ₹150
+Pasta - ₹120
+Exit
+If the user selects 1, ask: "How many Burgers do you want?"
+If the user selects 2, ask: "How many Pizzas do you want?"
+If the user selects 3, ask: "How many Plates of Pasta do you want?"
+If the user selects 4, print: "Thank you for dining with us!" and exit.
+💰 Payment Handling:
+
+Calculate the bill and ask for payment.
+If the amount entered is more, return the change.
+If the amount is less, ask for the remaining amount.
+If the user wants to order more (Y/N), show the menu again.
+If the user enters N/n, print "Thank you for dining with us!"
+
+int main() {
+    int tk,opt,bt,pt,amt=0,remn=0;
+    int bill;
+    char ch;
+    
+    a:
+    printf("1. Burger - ₹80\n");
+    printf("2. Pizza - ₹150\n");
+    printf("3. Pasta - ₹120\n");
+    printf("4. Exit\n");
+    
+    printf("Enter your cholice: ");
+    scanf("%d",&opt);
+    
+    if(opt==1){
+        printf("How many Burgers do you want? ");
+        scanf("%d",&bt);
+        bill= bt*80;
+        printf("bill= %d\n",bill); 
+        
+    }
+     else if(opt==2){
+        printf("How many Pizzas do you want? ");
+        scanf("%d",&bt);
+        bill= bt*150;
+        printf("bill= %d\n",bill); 
+    }
+    else if(opt==3){
+         // total tickets
+        printf("How many Plates of Pasta do you want? ");
+        scanf("%d",&bt);
+        bill= bt*120;
+        printf("bill= %d\n",bill); 
+    }
+    else if(opt==4){
+         // total tickets
+        printf("Thank you for dining with us! " );
+        return 0;
+    }
+    else {("please enter the valid number..");
+    }
+    printf("Enter the amount: ");
+    scanf("%d",&amt);
+    
+    if (amt==bill){
+        printf("Your Bill is Cleared..\n");
+    }
+    else if (amt>bill){
+       
+       int rem =amt-bill;
+     
+        printf("Your Bill is %d here is your change rs. %d /-\n",bill,rem);
+    }
+    else if (amt<bill){
+        remn= bill-amt;
+        printf("Your Bill is %d please pay the remaining amount [rs. %d /- \n]",bill,remn);
+    }
+    printf("Do you want to order more? ");
+    scanf(" %c",&ch);
+    
+    if(ch=='y' || ch=='Y'){
+        printf("Okay here you go..\n");
+        goto a;
+    }
+    else if(ch=='n' || ch=='N'){
+        printf("Thank you for dining with us!");
+    }
+    else printf("please enter the valid input\n ");
+
+    return 0;
+}
+------------------------------------------------------------------------------
+3. Petrol Pump Billing System ⛽
+Write a C program for a petrol pump billing system. The user menu should be:
+
+Petrol - ₹100/liter
+Diesel - ₹90/liter
+CNG - ₹50/kg
+Exit
+If the user selects 1, ask: "How many liters of Petrol do you want?"
+If the user selects 2, ask: "How many liters of Diesel do you want?"
+If the user selects 3, ask: "How many kg of CNG do you want?"
+If the user selects 4, print: "Thank you for visiting our petrol station!" and exit.
+💰 Payment Handling:
+
+Calculate the total bill and ask for payment.
+If the amount entered is more, return the change.
+If the amount is less, ask for the remaining amount.
+If the user wants to refuel more (Y/N), show the menu again.
+If the user enters N/n, print "Thank you for visiting our petrol station!"
+
+int main() {
+    int tk,opt,pt,bt,amt=0,remn=0;
+    float bill;
+    char ch;
+    
+    a:
+    printf("1. Petrol - ₹100/liter\n");
+    printf("2. Diesel - ₹90/liter\n");
+    printf("3. CNG - ₹50/kg\n");
+    printf("4. Exit\n");
+    
+    printf("Enter your cholice: ");
+    scanf("%d",&opt);
+    
+    if(opt==1){
+        printf("How many liters of Petrol do you want? ");
+        scanf("%d",&bt);
+        pt= bt*100;
+        printf("bill= %d\n",pt); 
+        
+    }
+     else if(opt==2){
+        printf("How many liters of Diesel do you want? ");
+        scanf("%d",&bt);
+        pt= bt*90;
+        printf("bill= %d\n",pt); 
+    }
+    else if(opt==3){
+         // total tickets
+        printf("How many kg of CNG do you want? ");
+        scanf("%d",&bt);
+        pt= bt*50;
+        printf("bill= %d\n",pt); 
+    }
+    else if(opt==4){
+         // total tickets
+        printf("Thank you for visiting our petrol station!" );
+        return 0;
+    }
+    else {("please enter the valid number..");
+    }
+    printf("Enter the amount: ");
+    scanf("%d",&amt);
+    
+    if (amt==pt){
+        printf("Your Bill is Cleared..\n");
+    }
+    else if (amt>pt){
+       
+       int rem =amt-pt;
+     
+        printf("Your Bill is %d here is your change rs. %d /-\n",pt,rem);
+    }
+    else if (amt<pt){
+        remn= pt-amt;
+        printf("Your Bill is %d please pay the remaining amount [rs. %d /- \n]",pt,remn);
+    }
+    printf("Do you want to refuel more? ");
+    scanf(" %c",&ch);
+    
+    if(ch=='y' || ch=='Y'){
+        printf("Okay here you go..\n");
+        goto a;
+    }
+    else if(ch=='n' || ch=='N'){
+        printf("Thank you for visiting our petrol station!");
+    }
+    else printf("please enter the valid input\n ");
+
+    return 0;
+}
+
+
+
+
+
+
+platform questions =-
+
+#include<stdio.h>
+#include<math.h>
+
+int main() {
+    int a,b;
+    char op
+    //printf("Enter Two number:");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    //printf("Enter Operator:");
+    scanf("%c",&op);
+
+    if (op=='+'){printf("%d",a+b);}
+    else if (op=='-'){printf("%d",a-b);}
+    else if (op=='*'){printf("%d",a*b);}
+    else if (op=='/'){printf("%d",a/b);}
+    else if (op=='%'){printf("%d",fmod(a,b));}
+    else {printf("Invalid input");}
+
+
+
+    return 0;
+
+}
+
+2nd question---
+
+#include<stdio.h>
+
+int main(){
+    int tm;
+    scanf("%d",&tm);
+
+    if(tm>=0 && tm<6){
+        printf("Its night.");
+    }
+    else if(tm>=6 && tm<12){
+        printf("Its Morning");
+    }
+    else if(tm>=12 && tm<18){
+        printf("Its Afternoon");
+    }
+    else if(tm>=18){
+        printf("Its Evening");
+    }
+    else {printf("Invalid input");}
+
+
+    return 0;
+
+}
+
+
+quest3----
+#include <stdio.h>
+
+int main() {
+    int num1, num2, num3, max;
+
+    // Input three numbers
+    //printf("Enter first number: ");
+    scanf("%d", &num1);
+    //printf("Enter second number: ");
+    scanf("%d", &num2);
+    //printf("Enter third number: ");
+    scanf("%d", &num3);
+
+    // Determine the maximum number
+    if (num1 >= num2 && num1 >= num3) {
+        max = num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        max = num2;
+    } else {
+        max = num3;
+    }
+
+    // Output the result
+    printf("%d\n", max);
+
+    return 0;
+}
+
+
+ques3  =-----
+
+#include<stdio.h>
+
+int main(){
+    int s1,s2,s3;
+
+    scanf("%d",&s1);
+    scanf("%d",&s2);
+    scanf("%d",&s3);
+
+    if((s1+s2)>s3 && (s1+s3)>s2 && (s2+s3>s1)){
+        printf("Triangle is valid");
+
+    }
+    else {printf("Triangle is Not valid");}
+
+  return 0;
+}

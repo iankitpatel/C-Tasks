@@ -1,0 +1,253 @@
+Que 1 :
+=======
+
+Write a C program to take user Id as 1001 and Pasword as 1010. Ask the user to enter his id, if the id is valid 
+
+then ask the user to enter his password ,if the password is correct then print the name of the user, otherwise 
+
+the program will print incorrect Passoword and if the Id doesnot exits, the program will print Incorrect Id.
+
+develop this program by using Switch case. 
+
+
+int main() {
+    int id,pass;
+    char name[20];
+    printf("enter you id: ");
+    scanf("%d",&id);
+    
+    switch(id){
+        case 1231: printf("enter your password: "); scanf("%d",&pass);
+        
+        switch(pass){
+            case 1321: printf("Wellcome Ankit "); break;
+            default : printf("Incorrect password");
+        }
+        break;
+        default :printf("Incorrect Id");
+        
+    }
+
+    return 0;
+}
+
+==================================================================
+Que 2 :
+=======
+
+Write a C program that will ask for a person’s name and his/her game score. Then it will ask for a second person’s name and score. 
+The program will print the winner’s name and also print by how many 
+
+points that person won by comparing the scores. Develop this program by using switch case.
+
+int main() {
+    int score1,score2;
+    char name1[20], name2[20];
+    printf("Enter first person's name: ");
+    scanf("%s",&name1);
+    printf("Enter first person's score: ");
+    scanf("%d",&score1);
+    printf("Enter second person's name: ");
+    scanf("%s",&name2);
+    printf("Enter second person's name: ");
+    scanf("%d",&score2);
+    
+    switch(score1>score2){
+        case 1: printf("%s is winner with %d runs",name1,score1-score2); break;
+        default :
+        switch(score2>score1){
+            case 1: printf("%s is winner with %d runs",name2,score2-score1); break;
+        default : printf("Both are same.");
+        }
+    }
+    
+    return 0;
+}
+
+=====================================================================
+
+Que 3 :
+=======
+
+
+Using switch statement write a C Program to take the value from the user as input marks of five subjects Physics, Chemistry, Biology, Mathematics, and Computer. 
+Calculate percentage and grade according to the following : 
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+Using switch statement.
+
+
+[Note:-Take All the values as Integer]
+
+int main() {
+    int p,c,m,b,ca,tot,per;
+    printf("Enter your marks in physics: ");
+    scanf("%d",&p);
+    printf("Enter your marks in Chemistry: ");
+    scanf("%d",&c);
+    printf("Enter your marks in Mathematics: ");
+    scanf("%d",&m);
+    printf("Enter your marks in Biology: ");
+    scanf("%d",&b);
+    printf("Enter your marks in Computer: ");
+    scanf("%d",&ca);
+    
+    tot=p+c+m+b+ca;
+    per=tot/5;
+    printf("your percentage is %d\n",per);
+    
+    switch(per/10){
+        case 10: printf("Grade A");break;
+        case 9: printf("Grade A");break;
+        case 8: printf("Grade B");break;
+        case 7: printf("Grade C");break;
+        case 6: printf("Grade D");break;
+        case 5: printf("Grade E");break;
+        case 4: printf("Grade E");break;
+        
+        default: printf("Grad F");
+    }
+
+    return 0;
+}
+
+
+=====================================================================
+Que 4 :
+========
+1)  Bank Account Operations
+Write a C program to simulate a banking system where a user can select the type of account and then perform operations based on their choice.
+
+Requirements:
+
+Account Types:
+
+          1) Savings Account
+          2) Current Account
+
+    Operations Based on Account Type:
+
+       For Savings Account:
+       1: Check Balance
+       2: Deposit
+       3: Withdraw
+
+    For Current Account:
+     1: Check Balance
+     2: Deposit
+     3: Withdraw
+     4: Overdraft Information
+
+
+3) Validation:
+
+           Withdrawal cannot exceed the account balance (for both accounts).
+          If invalid inputs are provided, display an appropriate error message. 
+
+int main() {
+    int n;
+    printf("Account Types:\n ");
+    printf("1) Savings Account.\n ");
+    printf("2) Current Account.\n ");
+    
+    printf("Enter your choice: ");
+    scanf("%d",&n);
+    
+    switch(n){
+        case 1: printf(" 1: Check Balance.\n"); printf("2: Deposit\n"); printf("3: Withdraw");break;
+        case 2: printf(" 1: Check Balance.\n"); printf("2: Deposit\n"); printf("3: Withdraw.\n");printf("4: Overdraft Information");break;
+        default: printf("Invalid Input.");
+       
+    }
+    
+======================================================================
+
+Que 5 :
+========
+
+Develop below program using switch case
+
+Write a C program that will read a float and a character from console. The character could be 'd' for deposit or 'w' for withdrawal.
+
+Starting with a Minimum balance of 2000.
+
+
+-> Ask the user to initialize the minimum balance and don't allow 0 and -ve values if it is 0 or -ve then print "Ammount Can't be stored".
+
+-> If the user want deposit operation then ask how much ammount he want to deposit and add that ammount with balance and print the balance.
+
+-> if the user want withdrwal operation then ask how much ammount he want to withdrwal and substract that ammount from the balance and print the balance.
+
+
+
+[Note: If the deposit ammount is negetive or 0 print "Invalid ammount". If the withdrawl ammount is negetive , 0 or greater than balance then print "Invalid ammount"]
+
+
+Hints:
+-------
+
+Declare variables for the amount in float, balance in float and transaction code in char types.
+
+Test the transaction code, if ‘d’ it is deposit. Test the ammount so that it is not negative.
+
+If the balance is not negative or positive sum-up the balance.
+
+balance = balance + amount;
+
+Test the transaction code for withdrawal, ‘w’. If the transaction code is ‘w’
+
+Minus the withdrawn amount to update the balance.
+
+balance = balance - amount;
+
+And print the balance.
+
+
+int main() {
+    int n,b,amt;
+    b=50000;
+    printf("1) Deposit.\n ");
+    printf("2) withdraw.\n ");
+    
+    printf("Enter your choice: ");
+    scanf("%d",&n);
+    
+    switch(n){
+        case 1: printf(" Deposit\n"); 
+                a: 
+                printf("Enter your deposite ammount: ");
+                scanf("%d",&amt); 
+                if(amt<=0) {
+                    printf("please enter the valid input.\n");
+                    goto a;
+                }
+                printf("your total balance is %d", b+amt); break;
+
+        case 2: printf(" Withdraw.\n");
+                printf("Your balance amount is %d\n",b);
+                printf("please withdraw the minnimum amount of 2000.\n");
+                printf("enter your withdraw amount: ");
+                scanf("%d",&amt);
+                if (amt<2000){
+                    printf("please enter the amount above 2000.\n");
+                }
+                else if (amt<=0){
+                    printf("Zero or negative number is not allowed.\n");
+                }
+                else 
+                printf("your withdraw amount is: %d\n ",amt);
+                printf("your total balance is %d", b-amt); break;
+                
+        default: printf("Invalid Input.");
+       
+    }
+    
+    return 0;
+}
+
+
+

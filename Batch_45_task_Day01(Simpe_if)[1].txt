@@ -1,0 +1,198 @@
+1. Write a C program to accept two integers and check whether they are equal or not(Using simple if).
+Test Data : 15 15
+Expected Output :
+Number1 and Number2 are equal
+
+int a,b;
+    printf("Enter first and second number : ");
+    scanf("%d%d",&a,&b);
+    if(a==b){
+        printf("both number is eqal");
+    }
+    printf("numbers are not eqal");
+----------------------------------------------------------------------------------------------
+
+2. Write a C program to check whether a given number is even or odd.
+Test Data : 15
+Expected Output :
+15 is an odd integer
+
+int a;
+    printf("Enter a number : ");
+    scanf("%d",&a);
+    if(a%2==0){
+        printf("Number is Even");
+        //return 0;
+    }
+    if (a%2!=0)
+    printf("numbers is ODD");
+
+---------------------------------------------------------------------------------------------
+
+3. Write a C program to check whether a given number is positive or negative.
+Test Data : 15
+Expected Output :
+15 is a positive number
+
+int a;
+    printf("Enter a number : ");
+    scanf("%d",&a);
+    if(a>0){
+        printf("Number is Positive");
+        //return 0;
+    }
+    if (a<0){
+    printf("numbers is Negative");
+    }
+    if (a==0){
+        printf("number is Zero");
+    }
+
+------------------------------------------------------------------------------------
+
+4. Write a C program to find whether a given year is a leap year or not.
+Test Data : 2016
+Expected Output :
+2016 is a leap year.
+
+if(y%4==0){
+        printf(" year is Leap year");
+        return 0;
+    }
+    if (y%4!=0){
+    printf("year is Not a leap year");
+    }
+-------------------------------------------------------------------------------------------
+
+5. Write a C program to read the age of a candidate and determine whether he is eligible to cast his/her own vote.
+Test Data : 21
+Expected Output :
+Congratulation! You are eligible for casting your vote.
+
+int age;
+    printf("Enter Your age : ");
+    scanf("%d",&age);
+    if(age>=18){
+        printf(" Congratulation! You are eligible for casting your vote.");
+        return 0;
+    }
+    if (age<18){
+    printf("Sorry..!! you are not eligible for casting your vote");
+    }
+----------------------------------------------------------------------------------------------------------
+
+6. Write a C program to read the value of an integer m and display the value of n is 1 when m is larger than 0, 0 when m is 0 and -1 when m is less than 0.
+Test Data : -5
+Expected Output :
+The value of n = -1
+
+int m,n;
+    printf("Enter the value of m : ");
+    scanf("%d",&m);
+    // printf("Enter the value of n : ");
+    // scanf("%d",&n);
+    if(m>0){
+        n=1;
+        printf("The value of n is %d",n);
+        return 0;
+    }
+    if (m<0){
+        n=-1;
+    printf("The value of n is %d",n);
+    return 0;
+    }
+    if (m==0){
+        n=0;
+    printf("The Value is 0");
+-----------------------------------------------------------------------------------------------------------------
+
+
+7.  Write a C program to read the roll no, name and marks of three subjects and calculate the total, percentage and division.
+Test Data :
+Input the Roll Number of the student :784
+Input the Name of the Student :James
+Input the marks of Physics, Chemistry and  Computer Application : 70 80 90
+Expected Output :
+Roll No : 784
+Name of Student : James
+Marks in Physics : 70
+Marks in Chemistry : 80
+Marks in Computer Application : 90
+Total Marks = 240
+Percentage = 80.00
+Division = First
+
+int main() {
+    int roll;
+    int p;
+    int c;
+    int a;
+    char name[100];
+    printf("Input the Roll Number of Student : ");
+    scanf("%d",&roll);
+    printf("Input the Name of the Student : ");
+    scanf(" %s",name);
+    printf("Input the marks of Physics: ");
+    scanf("%d",&p);
+    printf("Input the marks of Chemistry:");
+    scanf("%d",&c);
+    printf("Input the marks of Computer Application:");
+    scanf("%d",&a);
+    float total = p+c+a;
+    float totalno= 300; 
+    float per= (total/totalno)*100;
+    char div;
+    printf("Name of Student %s\n ",name);
+    printf("Marks in Physics %d\n ",p);
+    printf("Marks in Chemistry %d\n ",c);
+    printf("Marks in Computer Application %d\n ",a);
+    printf("Total Marks %2f\n ",total );
+    printf("percentage %2f\n ",per);
+    if (per>=75);{
+        printf("First Division!!!");
+        return 0;
+    }
+    if (per>=55 && per<75){
+        printf("Second Division");
+        return 0;
+    }
+    if (per<55 && per>33){
+        printf("Third Division");
+        return 0;
+    }
+    if (per<33){
+        printf("Sorry you are Fail, Better luck next time...");
+        return 0;
+    }
+    return 0;
+---------------------------------------------------------------------------------------------------
+
+8. Write a C program to find the largest of three numbers.
+Test Data : 12 25 52
+Expected Output :
+1st Number = 12,        2nd Number = 25,        3rd Number = 52
+The 3rd Number is the greatest among three
+
+int a,b,c;
+    printf("enter first number:");
+    scanf("%d",&a);
+    printf("enter Second number:");
+    scanf("%d",&b);
+    printf("enter Third number:");
+    scanf("%d",&c);
+    printf("first no. is %d\n ",a);
+    printf("second no. is %d\n ",b);
+    printf("third no. is %d\n ",c);
+    if (a>b && a>c){
+        printf("first no. is greatest among three!!");
+        return 0;
+    }
+    if (b>a && b>c){
+        printf("second no. is greatest among three!!");
+        return 0;
+    }
+    if (c>a && c>b){
+        printf("third no. is greatest among three!!");
+        return 0;
+    }
+

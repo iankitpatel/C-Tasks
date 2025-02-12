@@ -1,0 +1,280 @@
+Que 1 :
+=======
+
+Write a C program that takes an hour in the 24-hour format as input and identifies the time of day as "Morning," "Afternoon," "Evening," or "Night." 
+Implement this using a series of if statements. Ensure that the program also checks for invalid input, displaying an appropriate message if the entered hour is not within the valid range (0-23). 
+Present the program with a suitable title and header for clarity.
+
+Sample input : Enter the hour (24-hour format): 13
+Sample output : It's Afternoon.
+
+ float time;
+    printf("Enter the hour (24-hour format): ");
+    scanf("%f",&time);
+    if (time>=0 && time<=5){
+        printf("It's Night");
+        return 0;
+    }
+    if (time>5 && time<=12){
+        printf("It's Morning");
+        return 0;
+    }
+    if (time>12 && time<=16){
+        printf("It's Afternoon");
+       // return 0;
+    }
+    else {
+        printf("its evening");
+        
+    }
+
+    return 0;
+
+==========================================================================================================
+
+
+Que 2 : 
+=======
+
+Write a C program to find maximum between three numbers.
+
+Sample input  : int a = 100, b = 200, c = 300
+Sample output : 300
+
+int a,b,c;
+    printf("enter first number: ");
+    scanf("%d", &a);
+    printf("enter second number: ");
+    scanf("%d", &b);
+    printf("enter Third number: ");
+    scanf("%d", &c);
+    
+    if (a>b && a>c){
+        printf("a is highest among all three");
+        return 0;
+    }
+    if (b>a && b>c){
+        printf("b is highest among all three");
+        return 0;
+    }
+    else {
+        printf("c is highest among all three");
+    }
+
+
+==========================================================================================================
+
+Que 3 : 
+=======
+
+Write a C program to check whether a number is negative, positive or zero.
+
+Sample input  : int a = 10
+Sample output : possitive number
+
+Sample input  : int a = 0
+Sample output : zero
+
+Sample input  : int a = -2
+Sample output : negative number
+
+
+int a;
+    printf("enter the number: ");
+    scanf("%d", &a);
+    
+    if (a>0){
+        printf("Given number is positive ");
+        return 0;
+    }
+    if (a<0){
+        printf("Given number is Negative ");
+        return 0;
+    }
+    else {
+        printf("given number is Zero");
+    }
+
+==========================================================================================================
+
+Que 4 :
+=======
+
+Write a C program to input any character and check whether it is alphabet, digit or special character.
+
+
+Sample input  : char ch = 'A';
+Sample output : Alphabet
+
+Sample input  : char ch = '9';
+Sample output : Digit
+
+Sample input  : char ch = '@';
+Sample output : Special character
+
+char ch;
+    printf("enter the character: ");
+    scanf("%c",&ch);
+    
+    if (ch>='a'&& ch<='z' || ch>='A' && ch<='Z'){
+        printf("it is an alphabet.");
+        return 0;
+    }
+    if (ch>='0' && ch<='9'){
+        printf("it is a Digit.");
+        return 0;
+    }
+    if (ch==0){
+        printf("it a zero.");
+        return 0;
+        
+    }
+    else 
+        printf("it is a special Character.");
+  
+    return 0;
+
+==========================================================================================================
+
+Que 5 :
+=======
+
+Write a C program to input all sides of a triangle and check whether triangle is valid or not.
+ 
+          Validity Check:
+          The sum of side1 and side2 must be greater than side3.
+          The sum of side1 and side3 must be greater than side2.
+          The sum of side2 and side3 must be greater than side1.
+          If all three conditions are true, the program prints "The triangle is valid."
+          If any of the conditions are false, the program prints "The triangle is not valid."
+
+Sample input  : Enter the lengths of the three sides of the triangle:
+                Side 1: 3
+                Side 2: 4
+                Side 3: 5
+
+Sample output : The triangle is valid.
+
+
+
+Sample input  : Enter the lengths of the three sides of the triangle:
+                Side 1: 1
+                Side 2: 2
+                Side 3: 3
+
+Sample output : The triangle is not valid.
+===============================================================================================================
+Que 6:
+=======
+What will the program calculate as the bonus for an employee with 7 years of service and a salary of ₹50,000?
+
+Employee Bonus
+A company provides bonuses based on the employee's years of service:
+
+If service > 10 years, 10% bonus.
+If service > 5 years and <= 10 years, 5% bonus.
+Otherwise, no bonus.
+
+int salary, bonus,years;
+    salary = 50000;
+    printf("enter the service year: ");
+    scanf("%d", &years);
+    
+    if (years>10){
+        int bonus= salary*10/100;
+        salary+=bonus;
+        printf("bonus will be %d",bonus);
+        return 0;
+    }
+    if (years>=5 && years <=10){
+        int bonus=salary*5/100;
+        printf("Bonus will be %d",bonus);
+        return 0;
+    }
+    else
+        printf("no bonus wiil be provided to you ");
+================================================================================================================
+Que 7:
+=======
+What will the program output for the input 15?
+Divisibility Check
+A program checks if a number is divisible by both 3 and 5:
+
+If true, it prints "FizzBuzz."
+If divisible by only 3, it prints "Fizz."
+If divisible by only 5, it prints "Buzz."
+Otherwise, it prints "Not Divisible."
+
+int main() {
+    int n;
+    printf("enter the number :");
+    scanf("%d",&n);
+    if (n%3==0 && n%5==0){
+        printf("FizzBuzz.");
+    }
+    else if(n%3==0){
+        printf("Fizz.");
+    }
+    else if(n%5==0){
+        printf("Buzz.");
+        
+    }
+    else {
+        printf("Not divisible!!");
+    }
+    return 0;
+
+================================================================================================================
+
+Question - 
+
+DOMESTIC SLAB SYSTEM
+UNITS
+UNIT PRICE
+1-50       1.45
+51-100     2.8
+100-200    3.05
+201-300    4.75
+301-500    6.00
+>500       6.25
+
+Hints - 
+30U = 30*1.45=43.5
+80U = 50*1.45 + 30*2.8=156.5
+180U = 50*1.45+50*2.8+80*3.05=456.5
+580U = 50*1.45+50*2.8+100*3.05+100*4.75+200*6+80*6.25=2692.5
+
+
+float U,UR,amount;
+    printf("Enter the unit Consumed: ");
+    scanf("%f",&U);
+    if (U>=1 && U<=50){
+        float amount=U*1.45;
+        printf("Your Electricity amount is %f",amount);
+    }
+    else if(U>50 && U<=100){
+        float eu=U-50;
+        amount=50*1.45+eu*2.8;
+        printf("Your Electricity amount is %f",amount);
+    }
+    else if(U>100 && U<=200){
+        float eu=U-100;
+        amount=50*1.45+50*2.8+eu*3.05;
+        printf("Your Electricity amount is %f",amount);
+    }
+    else if(U>200 && U<=300){
+        float eu=U-200;
+        amount=50*1.45+50*2.8+100*3.05+eu*4.75;
+        printf("Your Electricity amount is %f",amount);
+    }
+     else if(U>300 && U<=500){
+        float eu=U-300;
+        amount=50*1.45+50*2.8+100*3.05+100*4.75+eu*6;
+        printf("Your Electricity amount is %f",amount);
+    }
+    else {
+        float eu=U-500;
+        amount=50*1.45+50*2.8+100*3.05+100*4.75+200*6+eu*6.25;
+        printf("Your Electricity amount is %6f",amount);
+    }
+

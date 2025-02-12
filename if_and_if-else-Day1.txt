@@ -1,0 +1,205 @@
+Que 1 :
+=======
+The program asks the user to enter a number.
+It checks if the number is greater than 5.
+If num > 5, it prints the square of the number.
+Otherwise, it prints the cube of the number.
+
+Sample input :4
+Sample output :The square no of 4 is 16
+
+Sample input :
+Sample output :The cube no of 4 is 64
+
+
+
+
+
+==========================================================================================================
+
+Que 2 : 
+=======
+
+Write a C program to check whether a number is negative, positive or zero.
+
+Sample input  : int a = 10
+Sample output : possitive number
+
+Sample input  : int a = 0
+Sample output : zero
+
+Sample input  : int a = -2
+Sample output : negative number
+
+
+==========================================================================================================
+
+Que 3 :
+=======
+
+Write a C program to input any character and check whether it is alphabet, digit or special character.
+
+
+Sample input  : char ch = 'A';
+Sample output : Alphabet
+
+Sample input  : char ch = '9';
+Sample output : Digit
+
+Sample input  : char ch = '@';
+Sample output : Special character
+
+==========================================================================================================
+
+Que 4 :
+=======
+Write a C program for reading any Month Number and displaying the Month name as a word.
+
+Sample Input :4
+Sample Output :April
+===============================================================================================================
+Que 5:
+=======
+What will the program calculate as the bonus for an employee with 7 years of service and a salary of ₹50,000?
+
+Employee Bonus
+A company provides bonuses based on the employee's years of service:
+
+If service > 10 years, 10% bonus.
+If service > 5 years and <= 10 years, 5% bonus.
+Otherwise, no bonus.
+================================================================================================================
+Que 6:
+=======
+What will the program output for the input 15?
+Divisibility Check
+A program checks if a number is divisible by both 3 and 5:
+
+If divisible by only 3, it prints "Fizz."
+If divisible by only 5, it prints "Buzz."
+Otherwise, it prints "Not Divisible."
+==========================================================================================================
+Que 7 : 
+=======
+
+Write a C program to find maximum between two numbers.
+
+Sample input  : int a = 100, b = 200
+Sample output : 200
+=============================================================================================================
+Que 8:
+========
+
+Write a C program to find minimum between two numbers.
+
+Sample input  : int a = 100, b = 200
+Sample output : 100
+
+
+
+==========================================================================================================
+
+Que 9 : 
+========
+Write a C program to read temperature in centigrade and display a suitable message according to the temperature state below:
+
+Temp < 0 then Freezing weather
+Temp 0-10 then Very Cold weather
+Temp 10-20 then Cold weather
+Temp 20-30 then Normal in Temp
+Temp 30-40 then Its Hot
+Temp >=40 then Its Very Hot
+
+Sample input:42
+
+Sample Output :
+Its very hot.
+
+==========================================================================================================
+
+Que 10 : 
+========
+
+Write a C program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. 
+Calculate percentage and grade according to following:
+
+
+Percentage >= 90% : Grade A
+
+Percentage >= 80% : Grade B
+
+Percentage >= 70% : Grade C
+
+Percentage >= 60% : Grade D
+
+Percentage >= 40% : Grade E
+
+Percentage < 40% : Grade F
+
+
+Sample input :
+
+Enter marks of Physics: 85
+Enter marks of Chemistry: 78
+Enter marks of Biology: 92
+Enter marks of Mathematics: 88
+Enter marks of Computer: 95
+
+
+Sample output :
+
+Total Marks = 438.00/500
+Percentage = 87.60%
+Grade = B
+
+
+====================================================================================================
+
+Que 11 :
+======== 
+Write a C program to calculate profit and loss on a transaction.
+
+Sample Input :500 700
+
+Sample Output :
+You can booked your profit amount : 200
+
+======================================================================================================================
+
+Que 12:
+==========
+Write a C program to accept id from user and display department.
+
+Id: 11 to 15 is Software department
+
+  16 to 20 is Developer department
+
+  21 to 23 is Management department
+==================================================================================================================
+Que 13 :
+========
+Write a C program that will ask for a person’s name and his/her game score. Then it will ask for a second person’s name and score. 
+The program will print the winner’s name and also print by how many 
+
+points that person won by comparing the scores. Develop this program by using Control flow Statements
+============================================================================================================================
+
+Que 14 :
+========
+Write a C program to read name and age of person and by age check the person is eligible for vote .
+
+Sample input  : Enter your name: Kishor
+                Enter your age: 20
+Sample output : Hi kishor you are eligible to vote.
+
+Sample input  : Enter your age: 16
+Sample output : Sorry Kishor you are not eligible to vote.
+===============================================================================================================================
+Que 15 :
+=========
+Write a C program to accept two integers and check whether they are equal or not.
+Sample input  : 15 15
+Sample Output :
+Number1 and Number2 are equal
+
+

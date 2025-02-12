@@ -1,0 +1,47 @@
+1. Write a C program to accept two integers and check whether they are equal or not (Using ternary operator).
+Test Data : 15 15
+Expected Output :
+Number1 and Number2 are equal
+----------------------------------------------------------------------------------------
+
+2. Write a C program to check whether a given number is even or odd (Using ternary operator).
+Test Data : 15
+Expected Output :
+15 is an odd integer
+--------------------------------------------------------------------------------------
+
+3. Write a C program to check whether a given number is positive or negative (Using ternary operator).
+Test Data : 15
+Expected Output :
+15 is a positive number
+----------------------------------------------------------------------------------------
+
+4. Write a C program to find the largest of three numbers (Using ternary operator).
+Test Data : 12 25 52
+Expected Output :
+1st Number = 12,        2nd Number = 25,        3rd Number = 52
+The 3rd Number is the greatest among three
+----------------------------------------------------------------------------------------------
+
+5. Write a C program to read the age of a candidate and determine whether he is eligible to  his/her own vote (Using ternary operator).
+Test Data : 21
+Expected Output :
+Congratulation! You are eligible for your vote.
+
+---------------------------------------------------------------------------------------------------------------------
+6.Write a C program to check whether a character is an alphabet or not (Using ternary operator).
+Test Data :
+a
+Expected Output :
+This is a alphabet .
+---------------------------------------------------------------------------------------
+7.The program asks the user to enter a number.
+It checks if the number is greater than 5.
+If num > 5, it prints the square of the number.
+Otherwise, it prints the cube of the number (Using ternary operator).
+
+Sample input :4
+Sample output :The square no of 4 is 16
+
+Sample input :
+Sample output :The cube no of 4 is 64

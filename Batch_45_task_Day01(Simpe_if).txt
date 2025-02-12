@@ -1,0 +1,59 @@
+1. Write a C program to accept two integers and check whether they are equal or not(Using simple if).
+Test Data : 15 15
+Expected Output :
+Number1 and Number2 are equal
+----------------------------------------------------------------------------------------------
+
+2. Write a C program to check whether a given number is even or odd.
+Test Data : 15
+Expected Output :
+15 is an odd integer
+---------------------------------------------------------------------------------------------
+
+3. Write a C program to check whether a given number is positive or negative.
+Test Data : 15
+Expected Output :
+15 is a positive number
+------------------------------------------------------------------------------------
+
+4. Write a C program to find whether a given year is a leap year or not.
+Test Data : 2016
+Expected Output :
+2016 is a leap year.
+-------------------------------------------------------------------------------------------
+
+5. Write a C program to read the age of a candidate and determine whether he is eligible to cast his/her own vote.
+Test Data : 21
+Expected Output :
+Congratulation! You are eligible for casting your vote.
+----------------------------------------------------------------------------------------------------------
+
+6. Write a C program to read the value of an integer m and display the value of n is 1 when m is larger than 0, 0 when m is 0 and -1 when m is less than 0.
+Test Data : -5
+Expected Output :
+The value of n = -1
+-----------------------------------------------------------------------------------------------------------------
+
+
+7.  Write a C program to read the roll no, name and marks of three subjects and calculate the total, percentage and division.
+Test Data :
+Input the Roll Number of the student :784
+Input the Name of the Student :James
+Input the marks of Physics, Chemistry and  Computer Application : 70 80 90
+Expected Output :
+Roll No : 784
+Name of Student : James
+Marks in Physics : 70
+Marks in Chemistry : 80
+Marks in Computer Application : 90
+Total Marks = 240
+Percentage = 80.00
+Division = First
+---------------------------------------------------------------------------------------------------
+
+8. Write a C program to find the largest of three numbers.
+Test Data : 12 25 52
+Expected Output :
+1st Number = 12,        2nd Number = 25,        3rd Number = 52
+The 3rd Number is the greatest among three
+
