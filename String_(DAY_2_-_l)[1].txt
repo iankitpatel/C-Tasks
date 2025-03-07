@@ -1,0 +1,122 @@
+Que 1 :
+======
+
+Write a c Program to check whether two given strings are anagram of each other or not.
+
+Sample input 1:- listen
+Sample input 2:- silent
+Sample output: this are anagram String
+
+Sample input 1:- Jack
+Sample input 2:- Jake
+Sample output : this is not are anagram String
+
+int main() {
+    char s[50];
+    char t[50];
+    int l1,l2,i,j;
+    int c=0;
+    printf("Enter first string: ");
+    scanf("%[^\n]",s);
+    printf("Enter second string: ");
+    scanf(" %[^\n]",t);
+    
+    // int l1=sizeof(s)/sizeof(char);
+    // int l2=sizeof(t)/sizeof(char);
+    // int k= strlen(s);
+    // int k= strlen(s);
+    
+    for(l1=0;s[l1]!='\0';l1++);
+    for(l2=0;t[l2]!='\0';l2++);
+    if(l1==l2){
+        
+    
+    for(i=0;i<l1;i++)
+    {
+        for(j=0;j<l2;j++){
+            if(s[i]==t[j]){
+                c++;
+                break;
+            }
+        }
+    }
+    printf("this are anagram String");
+    
+    }
+    else{
+        printf("this is not a anagram string");
+        
+    }
+    return 0;
+}
+==============================
+
+Que 2 :
+=======
+
+Write a c program to print all the frequency of character present in string .
+
+Sample input: String s=" Hello Everyone"
+
+Sample output  :-
+The frequency of H is 1
+The frequency of e is 3
+The frequency of l is 2
+The frequency of o is 2
+The frequency of   is 1  --------THIS IS FOP CHECKING THE SPACE COUNT 
+The frequency of E is 1
+The frequency of v is 1
+The frequency of r is 1
+The frequency of y is 1
+The frequency of n is 1
+
+int main() {
+    char s[50];
+    int l1,i,j;
+    int c=0;
+    printf("Enter first string: ");
+    scanf("%[^\n]",s);
+    for(i=0;s[i]!='\0';i++);
+    for(j=0;j<i;j++)
+    {
+        int c=0;
+        int hold=s[j];
+        if(s[j]=='*'){
+            continue;
+        }
+        for(int k=0;k<i;k++){
+            if(s[k]==hold){
+                c++;
+                break;
+            }
+        }
+        printf("The frequency of %c is %d\n",s[j],c);
+   
+    }
+    return 0;
+}
+
+==============================
+
+Que 3 :
+=======
+
+Write a C program to swap first and last character of given String.
+
+Sample input : "Welcome"
+Sample output : eelcomW
+
+int main() {
+    char s[50];
+    printf("Enter first string: ");
+    scanf("%[^\n]",s);
+    int l1=strlen(s);
+    int temp=s[0];
+    s[0]=s[l1-1];
+    s[l1-1]=temp;
+    
+   printf("%s",s);
+    
+    return 0;
+}
+==============================
