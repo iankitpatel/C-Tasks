@@ -1,0 +1,402 @@
+1) What is a function in C?
+
+A) A variable
+B) A block of code that performs a specific task
+C) A reserved keyword
+D) A data type
+
+ANS : A block of code that performs a specific task
+---------------------------------------
+
+2) How do you declare a function in C?
+
+A) func myFunction()
+B) int myFunction;
+C) void myFunction();
+D) myFunction(int);
+
+ANS : myfunction(int)
+---------------------------------------
+
+3) What is the return type of a function that doesn’t return any value?
+    
+A) void
+B) int
+C) float
+D) char
+
+ANS : void
+---------------------------------------
+
+4) What is the purpose of the “return” statement in a function?
+
+A) To end the program
+B) To execute the function
+C) To specify the function’s name
+D) To return a value from the function
+
+ANS : To return a value from the function
+---------------------------------------
+
+5) How do you define a function outside of the main function in C?
+
+A) function myFunction() { }
+B) myFunction() { }
+C) int myFunction() { }
+D) myFunction() { }
+
+ANS : int myfunction() { }
+---------------------------------------
+
+6) How do you define a function that takes two integers as arguments and returns their sum?
+
+A) int sum(int x, int y) { return x + y; }
+B) int sum(x, y) { return x + y; }
+C) void sum(int x, int y) { return x + y; }
+D) int sum(int x, y) { return x + y; }
+
+ANS : int sum(int x, int y) { return x + y; }
+---------------------------------------
+
+7) What is the keyword used to pass the address of a variable to a function?
+
+A) pass
+B) value    
+C) & (ampersand)
+D) addr
+
+ANS : &
+---------------------------------------
+
+8) What is the output of the following code?
+
+void swap(int a, int b) 
+{
+int temp = a;
+a = b;
+b = temp;
+}
+
+int main() 
+{
+int x = 5, y = 10;
+swap(x, y);
+printf(“x: %d, y: %d”, x, y);
+return 0;
+}
+
+A) x: 5, y: 10
+B) x: 10, y: 5
+C) Compilation Error
+D) Undefined behavior
+
+ANS : x: 5, y: 10
+---------------------------------------
+
+9) What is the output of the following code?
+
+int add(int x, int y) {
+int sum = x + y;
+return sum;
+}
+
+int main() {
+int result = add(5, 3);
+printf(“%d”, add(result, 2));
+return 0;
+}
+
+A) 10
+B) 8
+C) 7
+D) Compilation Error
+
+ANS : 10
+---------------------------------------
+
+10) What is the output of the following code?
+
+void printNumbers(int n) {
+if (n > 0) {
+printf(“%d “, n);
+printNumbers(n - 1);
+}
+}
+
+int main() {
+printNumbers(5);
+return 0;
+}
+
+A) 1 2 3 4 5
+B) 5 4 3 2 1
+C) 5
+D) 1
+
+
+ANS : 5 4 3 2 1
+
+######################################################
+
+
+Que 1 : 
+========
+Write a C program that print addition and multiplication of two integer using function.
+
+-> Create an `int main()` function.
+-> In the `main()` function, declare two integers `a` and `b`.
+-> Create a `void add()` function that takes two integers as arguments and prints their sum.
+-> Create a `void multiply()` function that takes two integers as arguments and prints their product.
+
+The main function should:
+
+Call the `add()` function to calculate and print the sum of `a` and `b`.
+Call the `multiply()` function to calculate and print the product of `a` and `b`.
+
+sample input :
+	Enter two number : 7 8
+
+sample output :
+	Addition is : 15
+	Multiplication is : 56
+
+#include <stdio.h>
+int add(int a, int b){
+    int sum=a + b;
+    return sum;
+}
+int mutiply(int a , int b){
+    int multi=a*b;
+    return multi;
+}
+int main() {
+    int a, b;
+    printf("Enter a value: ");
+    scanf("%d",&a);
+    printf("Enter b value: ");
+    scanf("%d",&b);
+    int sum= add( a, b);
+    int mul= mutiply( a, b);
+    printf("sum is = %d\n",sum);
+    printf("product is = %d\n",mul);
+    return 0;
+}
+
+=================================
+
+Que 2 : 
+========
+Write a program in C to find the square of number using the function.
+
+
+-> create int main() function.
+-> create int square(int n) function.
+-> in main function read one number and call square(int n) function. here square(int n) function will perform the operation and will return the square of given number as result to the main function.
+-> in main function catch the square of number which is calculate and return by square(int n) fuction and print it.
+ 
+Sample input : Input any number for square : 20
+
+Sample output : The square of 20 is : 400
+
+#include <stdio.h>
+#include <math.h>
+int square(int a){
+     int square=a*a;
+    return square;
+}
+int main() {
+    int a;
+    printf("Enter a value: ");
+    scanf("%d",&a);
+    int sqr= square(a);
+    printf("square root of number is = %d\n",sqr);
+    
+    return 0;
+}
+
+=================================
+
+Que 3 : 
+========
+Write a C program that return character on perticular given index of string using function.
+
+-> create char getChar(char s[], index i) function. 
+-> create int main() function. and call the getChar() fuction by passing the values and print the output.
+
+Sample input : 
+               Enter a String : "Welcome to naresh it"
+               Enter index : 5
+
+Sample output : m
+
+#include <stdio.h>
+#include <math.h>
+char getChar(char s[], int i){
+   
+     for(int d=0;s[d];d++){
+         if(d==i-1){
+            printf("%c",s[d]);
+            break;
+         }
+     }
+}
+int main() {
+    char s[100];
+    int i;
+    printf("Enter a string: ");
+    scanf("%[^\n]",s);
+    printf("Enter index number: ");
+    scanf("%d",&i);
+    char ch= getChar( s, i);
+    return 0;
+}
+
+=================================
+
+Que 4 :
+=======
+Write a function to find the length of a given string .
+
+-> create int main() function
+-> create int getLength(char str[]) function. this function will return length of string
+-> in main function read String and call the getLength fuction and print the output.
+
+Sample input : Hello
+Sample output: Length of the string is : 5
+
+
+Sample input : ThisIsALongString
+Sample output: Length of the string is : 17
+
+char length(char s[]){
+    // int ln=strlen(s);
+    int i;
+    for( i=0;s[i]!='\0';i++);
+    return i;
+}
+int main() {
+    char s[100];
+    int i;
+    printf("Enter a string: ");
+    scanf("%[^\n]",s);
+    char ln= length( s);
+    printf("Length of string is %d",ln);
+    return 0;
+}
+
+=================================
+
+Que 5 :
+========
+Write a C program that find factorial of given number using function.
+
+-> Create an `int main()` function.
+-> In the `main()` function, declare an integer `n`.
+-> Create a `int calculateFactorial()` function that takes an integer `n` and will return its factorial.
+
+The main function should:
+
+Call the `calculateFactorial()` function to calculate the factorial of `n`.
+
+input :
+	Enter a number : 5
+output :
+	Factorial is : 120 
+
+#include <stdio.h>
+#include <string.h>
+
+int calculateFactorial(int n){
+    // int ln=strlen(s);
+    int fact=1;
+    for(int i=1;i<=n;i++){
+        fact*=i;
+    }
+    return fact;
+}
+int main() {
+    int n;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    int fc= calculateFactorial(n);
+    printf("Factorial is : %d",fc);
+    return 0;
+}
+=================================
+
+Que 6 :
+=======
+Write a C program to calculate the sum of all elements in an integer array using function.
+
+-> create int main() function.
+-> create int arraySum(int arr[]) function. this function will take integer array as input in parameter and will return the total sum as result.
+-> in main function read size of array , then based on size create new array and store the values.
+-> call the arraySum function and print the sum which is return by arraySum function.
+
+
+Sample input:
+              Size of the array: 5
+              Array elements: 10 20 30 40 50
+
+
+Sample output: Sum of all elements in the array: 150
+
+int arraySum(int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {  // Corrected loop range
+        sum += arr[i];
+    }
+    return sum; // Returning the correct sum
+}
+
+int main() {
+    int size;
+    printf("Enter size of array: ");
+    scanf("%d", &size);
+
+    int arr[size];  // Variable-length array (VLA) in C
+    printf("Enter the elements in the array: ");
+    
+    for (int i = 0; i < size; i++) {  // Corrected loop variable
+        scanf("%d", &arr[i]);
+    }
+
+    int asum = arraySum(arr, size); // Pass size to function
+    printf("Sum of array elements is: %d\n", asum);
+    
+    return 0;
+}
+
+=================================
+
+Que 7 :
+=======
+Write a C program to check given String is palindrom or not using function.
+
+-> create int main() function.
+-> create int isPalindromString(char str[]) function. this function will check given string is palindrom or not and return (true if the string is a palindrome, false otherwise).
+-> in main function read one string input and call isPalindromString function. and print the result.
+
+Sample input : radar
+Sample output : The string is a palindrome.
+
+Sample input : hello
+Sample output : The string is not a palindrome.
+
+=================================
+
+Que 8 :
+=======
+Write a C program to print all twisted prime number from array.
+
+Twisted Prime number means a number itself is prime number and the reverse of that number also prime number.
+Examle : 2,5,7,11,23 -----> here 2,5,7,11 are twisted prime numbers but 23 is not twisted prime number.
+
+
+-> create int isPrime(int n) functions (Will return 0 as false otherwise 1 as true)
+-> create int reverse(int n) function (will return reverse of given integer number )
+-> create int main() function, in main function create array and store the values and call the isPrime() & reverse() fuctions and print the twisted prime numbers.
+
+Sample input : int arr[]={1,2,3,4,5,7,11,15,23};
+
+Sample output : twisted prime numbers are : 2,3,5,7,11
